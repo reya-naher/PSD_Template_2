@@ -1,0 +1,380 @@
+/*
+0px to 600px:       PHONE
+600px to 900:       Tablet Potrait
+900px to 1200px:    Tablet Landscape
+1200 to 1800px:     Normal
+1800px +:           Big Desktop
+$breakpoint
+-phone
+-tabport
+-tabland
+-bigdesktop
+1em = 16px
+*/
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 100%; 
+  }
+  /* @media only screen and (max-width: 75em) {
+    html {
+      font-size: 56.25%; 
+    } 
+  }
+  @media only screen and (max-width: 56.25em) {
+    html {
+      font-size: 50%; 
+    } 
+  }
+  @media only screen and (min-width: 112.5em) {
+    html {
+      font-size: 75%; 
+    } 
+  } */
+body{
+  overflow-x: hidden;
+}
+body p,li,span{
+  color:#62757F;
+  font-family: 'Montserrat', sans-serif;
+}
+/* navbar */
+.btn-applyNow{
+   background-color: white;
+   border-radius: 25px;
+   border:none;
+   box-shadow: 0 8px 6px -6px rgb(209, 207, 207);
+ }
+ .btn-applyNow-a{
+  color:#43CB83!important;
+ }
+ .nav-link{
+  margin: 0px 20px;
+ }
+ @media only screen and (max-width: 45em) {
+  .navbar {
+    margin: .5rem 6rem; 
+  } 
+  .navbar-brand img{
+    height: 40px;
+  }
+}
+@media only screen and (max-width: 56.25em) {
+  .navbar-brand img{
+    height: 50px;
+  }
+}
+ /* cover image */
+ .coverImage{
+  position: relative;
+ }
+.textCover{
+  position: absolute;
+  top: 25%;
+  left: 45%;
+  margin: -25px 0 0 -25px;
+  height: 260px;
+  width:400px;
+}
+@media only screen and (max-width: 45em) {
+  .textCover {
+    top: 25%;
+    left: 40%; 
+    height: 120px;
+    width:200px;
+  } 
+}
+@media only screen and (max-width: 56.25em) {
+  .textCover {
+    top: 25%;
+    left: 40%; 
+    height: 120px;
+    width:200px;
+  } 
+}
+.textCover h3{
+  color:#43CB83;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+}
+.btnVisit{
+  font-size: 14px;
+  padding: 10px 25px;
+  border-radius: 25px;
+  border:none;
+  background-color: #43CB83; 
+  color:white;
+}
+@media only screen and (max-width: 45em) {
+  .btnVisit{
+    padding: 5px 15px;
+    font-size: 12px;
+  }
+  
+}
+/* department */
+.dept-card{
+  width: 16rem;
+  height: 200px;
+  margin: 0 auto;
+}
+@media only screen and (max-width: 45em) {
+  .dept-card{
+    width: 24rem;
+  }
+}
+@media only screen and (max-width: 56.25em) {
+  .dept-card{
+    width: 30rem;
+  }
+}
+.Engineering{
+  background-color: #F1E3FC;
+}
+.Accounting{
+  background-color: #E3FCFA;
+}
+.Creative{
+  background-color: #FCF0E3;
+}
+.Design{
+  background-color: #FCEEE3;
+}
+.Physics{
+  background-color: #F3FCE3;
+}
+.Chemistry{
+  background-color: #E3F3FC;
+}
+.Engineering p,.Accounting p,.Creative p,.Design p,.Physics p,.Chemistry p{
+  font-size: 18px;
+  color:black;
+}
+/* learning test */
+.learning-text h2{
+  color:#43CB83;
+}
+@media only screen and (max-width: 45em) {
+  .learning-text{
+    padding:20px;
+  }
+  .learning-text h2{
+    font-size: 20px;
+  }
+}
+.colors-div b{
+  font-size: 30px;
+}
+@media only screen and (max-width: 45em) {
+  .colors-div b{
+    font-size: 20px;
+  }
+}
+.colors-div p{
+  font-size: 16px;
+}
+@media only screen and (max-width: 45em) {
+  .colors-div p{
+    font-size: 14px;
+  }
+}
+.yellow-div p,.yellow-div b{
+  color:#FFBA00;
+}
+.red-div p,.red-div b{
+  color:#FF5F72;
+}
+.green-div p,.green-div b{
+  color:#43CB83;
+}
+/* apply */
+.apply-div{
+  background: url(images/BG@4X.png);
+  height: 320px;
+}
+@media only screen and (max-width: 45em) {
+  .apply-div{
+    height: 1100px;
+  }
+}
+@media only screen and (max-width: 56.25em) {
+  .apply-div{
+    height: 1300px;
+  }
+}
+.applyDiv-pic img{
+  margin: 40px 20px;
+}
+@media only screen and (max-width: 45em) {
+  .applyDiv-pic img{
+    margin: 5px 80px;
+  }
+}
+@media only screen and (max-width: 56.25em) {
+  .applyDiv-pic img{
+    margin: 5px 160px;
+  }
+}
+.applyDiv-text{
+  margin-top:120px;
+}
+@media only screen and (max-width: 45em) {
+  .applyDiv-text{
+    margin:20px;
+  }
+  .applyDiv-text h3{
+    font-size: 18px;
+  }
+  .applyDiv-text p{
+    font-size: 14px;
+  }
+}
+.applyDiv-text span{
+  color:red;
+}
+form{
+  margin: 30px 30px 5px 30px;
+}
+.form-div{
+  position: relative;
+  top: -50px;
+  z-index: 1;
+  background:url(images/form.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+@media only screen and (max-width: 45em) {
+  .form-div{
+   top:0;
+  }
+}
+.form-control{
+  border-top:none;
+  border-left:none;
+  border-right:none;
+  border-bottom: 1px solid gray;
+  background-color:inherit;
+}
+.form-control:focus {
+  border-color: #62757F;
+  box-shadow: inset 0 1px 1px rgba(246, 245, 245, 0.075), 0 0 8px rgba(250, 248, 248, 0.6);
+}
+.apply-now{
+  font-size: 25px;
+  letter-spacing: 5px;
+  color: #62757F;
+  margin: 20px 0px;
+}
+.btnApply{
+  font-size: 14px;
+  padding: 10px 25px;
+  border-radius: 25px;
+  border:none;
+  background-color: #43CB83; 
+  color:white;
+}
+.account-underline{
+  text-decoration: underline;
+  color:#62757F;
+}
+/* news */
+.news{
+  margin-top:150px;
+}
+.news p{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+}
+.news h2{
+  color:#43CB83;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+}
+.btnNews{
+  padding: 10px 25px;
+  border-radius: 25px; 
+  background-color: #43CB83; 
+  border:none;
+  color:white;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+}
+.news-icon{
+  color:#43CB83;
+}
+.react-comment span{
+  padding: 0px 10px;
+}
+.news-france h4{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+}
+@media only screen and (max-width: 56.25em) {
+  .news-france{
+    margin: 20px 5px;
+  }
+}
+/* footer */
+footer{
+  margin-top: 200px;
+}
+footer h5{
+  margin-bottom: 18px;
+}
+.footer-div{
+  background-color: #252C3A;
+  color:white; 
+}
+.social-icons li{
+  display: inline;
+  font-size:1.5em;
+}
+.social-icons a{
+  color:#62757F;
+}
+.footer-featured li{
+  list-style: none;
+  padding: 5px 0px;
+}
+.footer-featured a{
+  color:white;
+}
+.footer-featured a:hover{
+  text-decoration: none;
+  color:#62757F;
+}
+.social-icons a:hover{
+  text-decoration: none;
+  color:#0089FD;
+}
+.input-group-text {
+  color:white;
+  background-color: #43CB83;
+  cursor: pointer;
+}
+.get-help{
+  background-color: white;
+}
+/* copyright */
+.copyright-list li{
+  display: inline;
+}
+.copy-right{
+  color:#62757F;
+  background-color: #1D232E;
+}
+.copyright-a{
+  color:#545659;
+}
+.copyright-a:hover{
+  text-decoration: none;
+  color:white;
+}
+
+
