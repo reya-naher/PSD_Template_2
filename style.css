@@ -133,7 +133,12 @@ body p,li,span{
   height: 200px;
   margin: 0 auto;
 }
-
+@media only screen and (max-width: 40em) {
+  .dept-card{
+    width: 20rem;
+    margin: 0 auto;
+  }
+}
 .Engineering{
   background-color: #F1E3FC;
 }
